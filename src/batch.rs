@@ -20,7 +20,12 @@ impl ColumnBatchType {
 
     /// Update to include `T` components
     pub fn add<T: Component>(&mut self) -> &mut Self {
-        self.types.push(TypeInfo::of::<T>());
+        self.add_dynamic(TypeInfo::of::<T>())
+    }
+    
+    /// Update to include `TypeInfo`
+    pub fn add_dynamic(&mut self, info: TypeInfo) -> &mut Self {
+        self.types.push(info);
         self
     }
 
