@@ -171,7 +171,7 @@ impl Archetype {
         self.entities[index] = id;
     }
 
-    pub(crate) fn types(&self) -> &[TypeInfo] {
+    pub fn types(&self) -> &[TypeInfo] {
         &self.types
     }
 
