@@ -71,7 +71,7 @@ pub mod serialize;
 mod take;
 mod world;
 
-pub use archetype::{Archetype, ArchetypeColumn, ArchetypeColumnMut};
+pub use archetype::{Archetype, ArchetypeColumn, ArchetypeColumnMut, TypeInfo};
 pub use batch::{BatchIncomplete, BatchWriter, ColumnBatch, ColumnBatchBuilder, ColumnBatchType};
 pub use bundle::{Bundle, DynamicBundle, DynamicBundleClone, MissingComponent};
 pub use command_buffer::CommandBuffer;
